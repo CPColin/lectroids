@@ -128,7 +128,7 @@ fun generate() {
             "Jars"
     )
 
-    val adjectiveProbability = 2.0 / 5.0 // Should be 11/49, but more fun this way.
+    val adjectiveProbability = 11.0 / 49.0
     val oneWordProbability = 2.0 / 11.0
 
     val lastName = if (Random.nextDouble() <= adjectiveProbability) {
@@ -142,7 +142,7 @@ fun generate() {
             "$adjective $noun"
         }
     } else {
-        lastNames.random()
+        (lastNames + nounsSingular).random()
     }
 
     val perfect = lastNamesOriginal.contains(lastName)
