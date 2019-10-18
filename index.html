@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buckaroo Banzai Lectroid Name Generator</title>
+    <script defer src="out/production/lectroids/lib/kotlin.js"></script>
+    <script defer src="out/production/lectroids/lectroids.js"></script>
+    <style>
+        body {
+           text-align: center;
+        }
+
+        button {
+            font-size: 200%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h3>Buckaroo Banzai Lectroid Name Generator</h3>
+<button id="name" onclick="lectroids.generate()" title="Click for another one!">Click to generate a name</button>
+<div id="new" style="display: none;">
+    <p>
+        The oscillation overthruster has delivered a name that was in neither the movie nor the novel!
+        We will examine that name carefully!
+    </p>
+    <img alt="New Jersey" src="newjersey.jpg">
+</div>
+<div id="tommy" style="display: none;">
+    <p>
+        That name appeared in either the movie or the novel!
+        We rate that name "Perfect"!
+    </p>
+    <img alt="Perfect Tommy" src="tommy.jpg">
+</div>
+<p>Click the button for another one!</p>
+</body>
+</html>
